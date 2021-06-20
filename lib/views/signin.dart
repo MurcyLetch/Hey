@@ -16,6 +16,16 @@ class _SigninState extends State<Signin> {
         padding: EdgeInsets.symmetric(horizontal: 24),
         child: Column(
           children: [
+            Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    child: Image.network(
+                      "https://miro.medium.com/max/3200/1*iWBTK_ozVFIFdQdz8mvfTw@2x.png",
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+
             TextField(
               style: simpletextfieldstyle(),
               decoration: textfieldinputdecoration("email"),
@@ -51,12 +61,41 @@ class _SigninState extends State<Signin> {
                 borderRadius: BorderRadius.circular(30)
               ),
               child: Text("Sign In",
-              style: TextStyle(
+              style: mediumtextstyle(),
+              ),
+            ),
+            SizedBox(height: 16,),
+
+            Container(
+              alignment: Alignment.center,
+              width:MediaQuery.of(context).size.width,
+              padding: EdgeInsets.symmetric(vertical: 18),
+              decoration: BoxDecoration(
                 color: Colors.white,
+                borderRadius: BorderRadius.circular(30)
+              ),
+              child: Text("Sign In with Google",
+              style: TextStyle(
+                color: Colors.blue,
                 fontSize: 17,
               ),
               ),
             ),
+            SizedBox(height: 16,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Dont't have an account? ",style: mediumtextstyle(),),
+                Text("Register now",
+                style:TextStyle(
+                  color: Colors.blue,
+                  fontSize: 16,
+                  decoration: TextDecoration.underline,
+                  fontStyle: FontStyle.italic,
+                ) 
+                ),
+              ],
+            )
           ],
         ),
       ),
