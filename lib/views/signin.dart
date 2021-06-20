@@ -20,7 +20,7 @@ class _SigninState extends State<Signin> {
                   padding: const EdgeInsets.all(20.0),
                   child: Container(
                     child: Image.network(
-                      "https://miro.medium.com/max/3200/1*iWBTK_ozVFIFdQdz8mvfTw@2x.png",
+                      "https://w7.pngwing.com/pngs/122/854/png-transparent-bloom-musa-flora-stella-tecna-fairy-wings-purple-violet-symmetry.png",
                       fit: BoxFit.contain,
                     ),
                   ),
