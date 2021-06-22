@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hey/views/signin.dart';
+import 'package:hey/views/signup.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,10 +16,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         //primaryColor: Colors.brown,
-        scaffoldBackgroundColor: Color(0xff1F1F1F),
+        scaffoldBackgroundColor: Colors.black12,
         primarySwatch: Colors.blue,
       ),
-      home: Signin(),
+      home: Signup(),
     );
   }
 }
