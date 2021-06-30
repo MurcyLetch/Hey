@@ -15,7 +15,7 @@ class Authmethods{
       FirebaseUser firebaseUser=result.user;
       return _userFromFirebaseUser(firebaseUser);
     }catch(e){
-      print(e.toString());
+      print(e.toString());//string
     }
 
   }
